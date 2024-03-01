@@ -1,0 +1,62 @@
+<html>
+<head>
+
+  <title>Gali Generator</title>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<header>
+
+</header>
+
+<h1>Gali Generator</h1>
+<div class="option-container">
+    <div class="option"><span>Smart:</span><input id="smart-input" type="range" min="0" max="2"/></div>
+    <div class="option"><span>Rude:</span><input id="rude-input" type="range" min="0" max="2"/></div>
+</div>
+
+<div id="text" onclick=getInsult()>...</div>
+<h2>Click the speech bubble to generate a new insult</h2>
+
+<div class="option-container">
+
+  <div class="button" onclick=copyToClipboard()>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 26">
+        <polygon points="3.21 2.78 14.75 2.78 14.75 0 0 0 0 20.99 3.21 20.99 3.21 2.78"/>
+        <rect x="5.16" y="4.56" width="14.75" height="20.99"/>
+      </svg>
+    Copy
+  </div>
+
+  <div class="button" onclick=toggleIcons()>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35 35" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+      <path class="svg-no-fill" d="M25.1,9.5l-15.2,8.4l15.2,7.6"/>
+        <circle cx="25.1" cy="9.9" r="4.4"/>
+        <circle cx="25.1" cy="25.1" r="4.4"/>
+        <circle cx="9.9" cy="17.9" r="4.4"/>
+      </path>
+    </svg>
+    Share
+  </div>
+
+</div>
+
+<span id="copied-text" style="opacity:0">Copied!</span>
+
+<footer>
+  <a href="https://www.youtube.com/channel/UCiL037nbqWL9Fib03HxZAmQ">
+    Who made this?
+  </a>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
