@@ -106,8 +106,8 @@ const shareeAll = () =>
   if (navigator.share) {
     // Browser supports native share api
     navigator.share({
-      text: `My High Score Is ${highScore} On fucksnake.netlify.app Can You Beat Me?`,
-      url: 'https://fucksnake.netlify.app/',
+      text: `${text.textContent} Unique Gali Invented By This Website`,
+      url: 'https://devvlos.github.io/Gali-Generator/ ${text.textContent}',
     }).then(() => {
     })
       .catch((err) => console.error(err));
